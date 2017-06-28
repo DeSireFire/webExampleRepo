@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+	  body{
+	background-color: #222222;
+}
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .container {
+	max-width: 1920px;
+	min-width: 1200px;
+	height: 973px;
+	background: url(./images/bg.jpg) no-repeat;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+    }
+    .box {
+      width: 1200px;
+      height: 100%;
+      margin: 0 auto;
+      position: relative;
+    }
+    .box .p {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .box .p img, .box .p .name {
+      position: absolute;
+      bottom: 0;
+      transition: all 1s ease;
+    }
+    .box .p1 img {
+      left: 300px;
+      opacity: 0;
+      transform: translateX(20%);
+    }
+    .box .p2 img {
+      left: 500px;
+      opacity: 0;
+      transform: translateX(20%);
+    }
+    .box .p3 img {
+      left: 400px;
+      opacity: 0;
+      transform: translateX(20%);
+    }
+    .box .p4 img {
+      left: 450px;
+      opacity: 0;
+      transform: translateX(20%);
+    }
+    .box .p1.show img, .box .p2.show img, .box .p3.show img, .box .p4.show img {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .box .p1 .name {
+      position: absolute;
+      width: 305px;
+      height: 413px;
+      left: 108px;
+      transform: translateX(-20%);
+      opacity: 0;
+      bottom: 275px;
+      background: url(./images/sprite.png) no-repeat -274px 0px;
+    }
+    .box .p2 .name {
+      position: absolute;
+      width: 293px;
+      height: 407px;
+      left: 186px;
+      bottom: 275px;
+      transform: translateX(-20%);
+      opacity: 0;
+      background: url(./images/sprite.png) no-repeat 0px -421px;
+    }
+    .box .p3 .name {
+      position: absolute;
+      width: 277px;
+      height: 408px;
+      left: 186px;
+      bottom: 275px;
+      transform: translateX(-20%);
+      opacity: 0;
+      background: url(./images/sprite.png) no-repeat -585px 0px;
+    }
+    .box .p4 .name {
+      position: absolute;
+      width: 268px;
+      height: 415px;
+      left: 186px;
+      bottom: 275px;
+      transform: translateX(-20%);
+      opacity: 0;
+      background: url(./images/sprite.png) no-repeat 0px 0px;
+    }
+    .box .p1.show .name, .box .p2.show .name, .box .p3.show .name, .box .p4.show .name {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .nav {
+      position: absolute;
+      width: 129px;
+      top: 200px;
+      right: 300px;
+      z-index: 2;
+    }
+    .nav li {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      margin: 1px auto 0;
+      cursor: pointer;
+      transition: all .6s linear;
+    }
+    .nav li img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 129px;
+      height: 129px;
+    }
+    .nav li i {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+      transition: opacity .6s linear;
+    }
+    .nav li.t1 i {
+      background: url(./images/t1.png) no-repeat center;
+    }
+    .nav li.t2 i {
+      background: url(./images/t2.png) no-repeat center;
+    }
+    .nav li.t3 i {
+      background: url(./images/t3.png) no-repeat center;
+    }
+    .nav li.t4 i {
+      background: url(./images/t4.png) no-repeat center;
+    }
+    
+    .nav li em {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity .6s linear;
+    }
+    .nav li.t1 em {
+      background: url(./images/t1_on.png) no-repeat center;
+    }
+    .nav li.t2 em {
+      background: url(./images/t2_on.png) no-repeat center;
+    }
+    .nav li.t3 em {
+      background: url(./images/t3_on.png) no-repeat center;
+    }
+    .nav li.t4 em {
+      background: url(./images/t4_on.png) no-repeat center;
+    }
+    .nav li.on {
+      width: 129px;
+      height: 129px;
+    }
+    .nav li.on i {
+      opacity: 0;
+    }
+    .nav li.on em {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="nav">
+    <ul>
+      <li class="item t1 on">
+        <i></i>
+        <em></em>
+      </li>
+      <li class="item t2">
+        <i></i>
+        <em></em>
+      </li>
+      <li class="item t3">
+        <i></i>
+        <em></em>
+      </li>
+      <li class="item t4">
+        <i></i>
+        <em></em>
+      </li>
+    </ul>
+  </div>
+  <div class="box">
+    <div class="p p1 show">
+      <span class="name"></span>
+      <img src="./images/p1.png" alt="">
+    </div>
+    <div class="p p2">
+      <span class="name"></span>
+      <img src="./images/p2.png" alt="">
+    </div>
+    <div class="p p3">
+      <span class="name"></span>
+      <img src="./images/p3.png" alt="">
+    </div>
+    <div class="p p4">
+      <span class="name"></span>
+      <img src="./images/p4.png" alt="">
+    </div>
+  </div>
+</div>
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script>
+  $(function () {
+    $('.nav li').on('click', function () {
+      $(this).addClass('on').siblings().removeClass('on');
+      $('.p').eq($(this).index()).addClass('show').siblings().removeClass('show');
+    })
+  })
+</script>
+</body>
+</html>
