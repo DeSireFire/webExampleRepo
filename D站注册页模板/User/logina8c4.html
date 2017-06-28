@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<!-- Mirrored from usr.005.tv/User/login.html?refurl=http://www.dilidili.wang/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Jan 2018 10:25:54 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="applicable-device" content="pc,mobile">
+<title>登录页</title>
+<meta name="Description" content="羁绊网会员中心">
+<meta name="Keywords" content="会员中心">    
+
+    <link rel="stylesheet" href="../Style/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../Style/css/master.css" />
+    <script src="../Style/js/jquery.js"></script>
+    <script src="../Style/js/005tv.js"></script>
+    <script>
+        jQuery(function() {
+            //登录
+            jQuery(".formcon .formbox").delegate('.loginbtn', 'click', function() {
+                if (jQuery.trim(jQuery(".loginpage .inputlogin:eq(0)").val()).length < 1 || jQuery.trim(jQuery(".loginpage .inputlogin:eq(1)").val()).length < 1) {
+                    bootbox.alert('用户名或密码不能为空');
+                    return false;
+                }
+                if (jQuery.trim(jQuery(".loginpage .inputyzm").val()).length < 4) {
+                    bootbox.alert('请输入4位有效验证码');
+                    return false;
+                }
+                return true;
+            }).delegate('.zhucebtn', 'click', function() {
+                window.location.href = 'register.html';
+            });
+
+        });
+    </script>
+</head>
+
+<body onLoad="changeVerify()">
+    <!--公用顶部开始-->
+<div class="topnav clear fonthui">
+    <div class="w1000 clear">
+        <div class="topnavlist fleft">
+            <a class="current" href="javascript:;">MENU</a>
+            <a href="http://www.005.tv/" target="_blank">羁绊资讯</a>
+            <a href="http://www.dilidili.com/" target="_blank">嘀哩嘀哩</a>
+            <a href="http://www.xcmh.cc/" target="_blank">星辰漫画</a>
+            <a href="http://www.93w.net/" target="_blank">93励志网</a>
+            <a href="http://moe.005.tv/" target="_blank">萌娘资源站</a>
+            <a href="http://bbs.005.tv/" target="_blank">羁绊论坛</a>
+        </div>
+        <div class="loginbox fright">
+                        <div class="loginbefore"><a href="login.html">登录</a><a href="register.html">注册</a></div>
+                    </div>
+    </div>
+</div>
+<div id="navsite">羁绊网</div>
+<!--公用顶部结束-->
+    <div class="loginpage">
+        <div class="bigtit">会员中心<em>usr.005.tv</em></div>
+        <div class="w1000 formtit">
+            <p><span>登录</span></p>
+        </div>
+        <div class="formcon clear">
+            <div class="loginbanner fleft">
+                <img src="../Style/images/temp/banner.jpg">
+            </div>
+            <div class="formbox fright">
+                <form action="http://usr.005.tv/User/login_do.html" method="post">
+                    <p class="clear">
+                        <label class="adminico adminname">用户名</label>
+                        <input type="text" name="username" value="" placeholder="请输入用户名或者邮箱" class="inputlogin" maxlength="20">
+                    </p>
+
+                    <p class="clear">
+                        <label class="adminico adminpassword">密码</label>
+                        <input type="password" name="password" value="" placeholder="******" class="inputlogin" maxlength="16">
+                    </p>
+
+                    <p class="clear">
+                        <label class="adminico adminyzm">验证码</label>
+                        <input type="text" name="verify" class="inputyzm" maxlength="4"><span>
+                        <img src="#" id="verifyImg" onClick="changeVerify()" title="点击刷新"></span></p>
+                    <script language="JavaScript">
+                        function changeVerify() {
+                            var timenow = new Date().getTime();
+                            document.getElementById('verifyImg').src = 'verifyd41d.png?' + timenow;
+                        }
+                    </script>
+
+                    <p>
+                        <input type="submit" value="登录" class="formbtn loginbtn">
+                        <input type="button" value="注册" class="formbtn zhucebtn">
+                    </p>
+
+                    <p class="lostpassword fontblue"><a href="findpasswd.html">忘记密码</a></p>
+                    <div class="loginway">
+                        <a href="http://bbs.005.tv/connect.php?mod=login&amp;op=init&amp;referer=index.php&amp;statfrom=login_simple"><img src="../Style/images/qq_login.gif"></a>
+                    </div>
+                    <input type="hidden" name="refurl" value="http://www.dilidili.wang/">
+                <input type="hidden" name="__hash__" value="be046d869ce23097eb9858b40dad2d7c_635fa18d99054e9a3f70eec3f0a4769a" /></form>
+            </div>
+        </div>
+    </div>
+    <!--公用尾部开始-->
+<div class="footer w1000 clear">
+	<div class="footleft fleft">
+<!--
+		<div class="friendlink">
+			 友情链接：<a href="http://www.ishuhui.com/">鼠绘汉化网</a><a href="http://www.bilibilijj.com/">哔哩哔哩唧唧</a><a href="http://pc.tgbus.com/ku_73_1/">单机游戏库</a><a href="http://dota2.178.com/">dota2</a><a href="http://www.kan300.com/">看撒动漫</a><a href="http://www.93w.net/">励志网</a><a href="http://www.733dm.com/">好看的动漫</a><a href="http://www.idanmu.com/">爱弹幕</a><a href="http://www.xxdm.org/">星星动漫</a>
+		</div>
+-->
+		<div class="footlink">
+           <a href="http://www.005.tv/">资讯</a><span>|</span><a href="http://moe.005.tv/">资源</a><span>|</span><a href="http://www.dilidili.com/anime/">新番</a><span>|</span><a href="http://bbs.005.tv/forum.php">论坛</a><span>|</span><a href="http://weibo.com/005dilidili/">官方微博</a>
+		</div>
+		<div class="copyright">
+			<p>互联网ICP备案：闽ICP备12004074号-8 闽网文（2015）1788-036号</p>
+			<p>© 2016 羁绊网络 本站不提供任何视听上传服务，所有内容均来自视频分享站点所提供的公开引用资源</p>
+		</div>
+	</div>
+	<div class="weixinbox fright">
+		<img src="../Style/images/weixin.png"><p>扫描二维码收听公共号</p>
+	</div>
+</div>
+<div class="divfixbox" style="display: none">
+    <span>...</span>
+</div>
+<div class="riseinfo_box"> <span></span> </div>
+<!--公用尾部结束-->
+</body>
+
+
+<!-- Mirrored from usr.005.tv/User/login.html?refurl=http://www.dilidili.wang/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Jan 2018 10:25:57 GMT -->
+</html>
