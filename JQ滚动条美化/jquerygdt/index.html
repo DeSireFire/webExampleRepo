@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>最简单的滚动条</title>
+		<meta name="zjp"/>
+		<style type="text/css">
+			#warp{
+	height: 300px;
+	width: 300px;
+	border: 1px solid #5B5B5B;
+	overflow: hidden;
+	margin: 50px 0 0 200px;
+	position: relative;
+			}
+			  #box{
+			  	height: 100%;
+			  	overflow-x: hidden;  
+                overflow-y: auto;
+                margin-right: -17px;
+                padding: 10px;
+               
+			  }
+			p{
+				height: 30px;
+				border: 1px solid #eee;
+				margin: 0;
+				padding: 0;
+			}
+			#scrollBar{
+	height: 100%;
+	width: 5px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	border-radius: 5px;
+	background-color: #939393;
+	opacity: 0.7;
+	cursor: pointer;
+			}
+			#scrollBar:hover{
+	background-color: #000000;
+}
+		</style>
+		<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+		<script src="setBar.js"></script>
+		<script>
+			$(function(){
+				
+				setSrollBar()
+			})
+		</script>
+	</head>
+	<body>
+		<div id='warp'>
+			<div id="box">
+				新华社北京6月12日电 记者12日从教育部获悉，截至2017年底，教育部高等教育教学评估中心和中国工程教育专业认证协会共认证全国198所高校的846个工科专业。通过专业认证，标志着这些专业的质量实现了国际实质等效，进入全球工程教育的“第一方阵”。
+
+2016年，我国正式加入国际工程教育《华盛顿协议》组织。作为《华盛顿协议》正式成员，中国工程教育认证的结果已得到其他18个成员国（地区）认可。目前，我国工程教育专业认证已覆盖21个专业类，计划2020年实现所有专业大类全覆盖。
+
+据介绍，我国每年有120余万工科专业本科毕业生。通过认证专业的毕业生在《华盛顿协议》相关国家和地区申请工程师执业资格或申请研究生学位时，将享有当地毕业生同等待遇，为中国工科学生走向世界提供了国际统一的“通行证”。同时，认证结果在行业及企业内有较高的权威性，在部分行业工程师资格考试或能力评价中享有不同程度的减免和优惠。
+
+2006年，教育部启动工程教育专业认证试点工作。10多年来，我国以申请加入《华盛顿协议》为契机，以推进工程教育认证为抓手，全面深化工程教育改革，实施了“卓越工程师教育培养计划”等一系列改革举措。2017年，教育部启动了“新工科”建设，加快发展新兴工科专业，改造升级传统工科专业。
+				
+			</div>
+			<div id="scrollBar" onselectstart="return false"></div>
+		</div>
+		
+	</body>
+</html>
