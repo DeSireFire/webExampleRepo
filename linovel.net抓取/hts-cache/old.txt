@@ -1,0 +1,3 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+15:49:27	76621/76621	U--MCZ	200	updated ('OK')	text/html	date:Thu,%2016%20Aug%202018%2007:49:23%20GMT	http://www.linovel.net/	D:/WebCatche/http___www.linovel.net_/index-2.html	(from )
+15:49:28	18212/18212	U--MCZ	200	updated ('OK')	text/html	date:Thu,%2016%20Aug%202018%2007:49:24%20GMT	http://www.linovel.net/robots.txt		(from )

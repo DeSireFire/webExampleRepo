@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.linovel.net	TRUE	/	FALSE	1999999999	kotori	bcfc750ab565ca58790c0a8f5abf80a4
+hm.baidu.com	TRUE	/	FALSE	1999999999	HMACCOUNT	375F0FCAD6876006
+www.linovel.net	TRUE	/	FALSE	1999999999	cht	0
+
