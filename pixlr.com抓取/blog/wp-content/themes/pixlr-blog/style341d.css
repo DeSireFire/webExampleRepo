@@ -1,0 +1,18 @@
+/*
+Theme Name: Pixlr Blog
+Theme URI: http://pixlr.com/
+Author: pixlr.com
+Author URI: http://pixlr.com/
+Description: Pixlr Blog
+Version: 1.0.0
+Text Domain: pixlr-blog
+Tags:
+*/
+
+#pixlr-blog .main-header {
+	background-color: #070423 !important;
+}
+
+#pixlr-blog .post .body img, #pixlr-blog .page .body img {
+	width: inherit !important;
+}

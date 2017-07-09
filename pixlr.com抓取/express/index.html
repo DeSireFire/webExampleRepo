@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from pixlr.com/express/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Mar 2018 11:08:44 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Online Image Editor | Pixlr Express</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<meta content="Pixlr Express is our most popular web-based photo editor that makes editing photos easy. Apply overlays, filters, and stickers to make any photo beautiful." name="Description">
+<meta content="photo, photograph, picture, free, opacity, alpha, edit, editing, adjustments, online, flickr, facebook, photobucket, camera, digital, image, red-eye, fix, photoshop, gimp, photoshop" name="Keywords">
+<link href="http://img-cdn.pixlr.com/images/pixlr-favicon-16x16.ico" rel="shortcut icon">
+<link href="http://img-cdn.pixlr.com/images/pixlr-favicon-16x16.ico" rel="icon">
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+<!-- Google Tag Manager -->
+<script>
+  //<![CDATA[
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
+    {'gtm.start': new Date().getTime(),event:'gtm.js'}
+    );var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M4LP88G');
+  //]]>
+</script>
+<script>
+  //<![CDATA[
+    if (top != self) {
+      if (false) {
+        // v 1.0
+        top.location.replace(document.location);
+      }
+    }
+  //]]>
+</script>
+
+
+<style>
+  /*<![CDATA[*/
+    html, body { margin:0px; padding:0px; background: #fff; overflow:hidden; width:100% height:100%; }
+    body { padding-right: 0; }
+    
+    #noflash {
+      padding-top:30px;
+      margin:0 auto;
+      width:600px;
+    }
+    
+    #flash {
+      float: left;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .pro-app-wrap{
+      position: absolute;
+      right: 0;
+      height: 96%;
+      padding: 20px;
+      background: #444444;
+    }
+    
+    .pro-appslot{
+      margin-bottom: 20px;
+    }
+    
+    .express-beta{
+      width: 300px;
+      height: 94px;
+      margin-bottom: 25px;
+    }
+    
+    @media only screen and (max-width: 1023px) {
+      body { padding-right: 0px!important; }
+      .pro-app-wrap { display: none; }
+      .pro-appslot { display: none; }
+    }
+    
+    @media only screen and (max-height: 890px) {
+      .pro-app-wrap .adslot:last-child{
+        display: none;
+      }
+    }
+  /*]]>*/
+</style>
+
+</head>
+<body>
+<div class="flash-app" id="flash">
+<noscript>
+Pixlr express requires javascript.
+</noscript>
+<script>
+  //<![CDATA[
+    var version = 0;
+    if (navigator.plugins != null && navigator.plugins.length > 0 && navigator.plugins["Shockwave Flash"]) {
+      version = navigator.plugins["Shockwave Flash"].description.split(" ")[2].split(".")[0];
+    } else {
+      try {
+        var axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.7");
+        version = axo.GetVariable("$version").split(" ")[1].split(",")[0];
+      } catch (e) {}
+    }
+    if(version >= 10) {
+      var windowHeight = window.innerHeight;
+      RunContent('width','100%','height',windowHeight,'src','expressd4ac.swf?name=&amp;email=&amp;loc=en',
+      'movie','expressd4ac.swf?name=&amp;email=&amp;loc=en','quality','high','wmode',
+      'window','devicefont','false','id','editor','bgcolor','#606060',
+      'name','editor','menu','false','allowFullScreen', 'true','allowScriptAccess','always','allowFullScreenInteractive','true');
+    } else {
+      //document.write("<div id='noflash'>You need Flash player 10 or better to be able to use Pixlr Editor - <a href='http://get.adobe.com/flashplayer'>Get Flash Player</a></div>");
+    }
+    function Generateobj(objAttrs,params,embedAttrs) {
+      var isIE = (navigator.appVersion.indexOf("MSIE") != -1)?true : false;
+      var isWin = (navigator.appVersion.toLowerCase().indexOf( "win" ) != -1 )?true : false;
+      var isOpera = ( navigator.userAgent.indexOf( "Opera" ) != -1 )?true : false;
+      var str='';
+      if( isIE&&isWin&&!isOpera ) {
+        str+='<object ';
+        for( var i in objAttrs ) {
+          str+=i+'="'+objAttrs[i]+'" ';
+        }
+        str+='>';
+        for( var i in params ) {
+          str+='<param name="'+i+'" value="'+params[i]+'"/>';
+        }
+        str+='</object>';}else{str+='<embed id="objectFlashEx" ';
+        for( var i in embedAttrs ) {
+          str+=i+'="'+embedAttrs[i]+'" ';
+        }
+        str+=' />';
+      }
+      document.write(str);
+    }
+    function RunContent() {
+      var ret=GetArgs(arguments,"movie","clsid:d27cdb6e-ae6d-11cf-96b8-444553540000","application/x-shockwave-flash");
+      Generateobj( ret.objAttrs,ret.params,ret.embedAttrs );
+    }
+    function GetArgs( args,srcParamName,classid,mimeType ) {
+      var ret=new Object();
+      ret.embedAttrs=new Object();
+      ret.params=new Object();
+      ret.objAttrs=new Object();
+      for( var i = 0; i < args.length; i=i+2 ) {
+        var currArg=args[i].toLowerCase();
+        switch(currArg) {
+          case "src":
+          case "movie":
+            ret.embedAttrs["src"]=args[i+1];
+            ret.params[srcParamName] = args[i+1];
+          break;
+          case "id":
+            ret.objAttrs[args[i]] = args[i+1];
+          break;
+          case "width":
+          case "height":
+          case "name":
+          case "tabindex":
+            ret.embedAttrs[args[i]] = ret.objAttrs[args[i]] = args[i+1];
+          break;
+          default:
+            ret.embedAttrs[args[i]] = ret.params[args[i]] = args[i+1];
+      }
+    }
+    ret.objAttrs["classid"] = classid;
+    if(mimeType)ret.embedAttrs["type"] = mimeType;
+      return ret;
+    }
+  //]]>
+</script>
+
+<script>
+  //<![CDATA[
+    function buildUrl(base, args) {
+      if (!args) return base;
+      var res = [];
+      for (var key in args) {
+        if (args.hasOwnProperty(key)) {
+          res.push(key + '=' + encodeURI(args[key]));
+        }
+      }
+      return base + '?' + res.join('&');
+    }
+    function share(url, name, desc, service) {
+      if (service === "twitter") {
+        var u = buildUrl("https://twitter.com/intent/tweet", {
+          via: "pixlr",
+          text: desc
+        });
+        window.open(u, "pop", "scrollbars=0, titlebar=0, status=0, menubar=0, width=550, height=430");
+      } else {
+        var u = buildUrl("../fb_presave_expr/index.html", {
+          url: url,
+          desc: desc
+        });
+        window.open(u, "pop", "scrollbars=0,titlebar=0,status=0,menubar=0,width=600,height=400");
+      }
+    }
+    function viewportSize() {
+      var test = document.createElement( "div" );
+      test.style.cssText = "position: fixed;top: 0;left: 0;bottom: 0;right: 0;";
+      document.documentElement.insertBefore( test, document.documentElement.firstChild );
+      var dims = { width: test.offsetWidth, height: test.offsetHeight };
+      document.documentElement.removeChild( test );
+      return dims;
+    }
+    window.onload=function() {
+      var flash = document.getElementById("flash");
+      var viewport = viewportSize();
+      flash.style.height=viewport.height + "px";
+    }
+    var adVisible = false;
+    window.onresize=function() {
+      var viewport = viewportSize();
+      document.getElementById("flash").style.height=viewport.height + "px";
+      document.getElementById("objectFlashEx").height = viewport.height;
+      if( adVisible == false && viewport.width > 1023 ){
+        //injectAds(viewport);
+      }
+    }
+    function injectAds() {
+      $.get('https://www.123rfapis.com/pixlr/ads/?page=express',function(res){
+        var dfpslots = $(".pro-app-wrap").find(".pro-appslot");
+        if (dfpslots.length) {
+          dfpslots.each(function(){
+            var $this = $(this);
+            var type = $this.attr('id');
+            if (type=='express_page_type_b') {
+              if(res.TypeB.length > 0) {
+                var index = Math.floor(Math.random() * res.TypeB.length);
+                $this.append('<a href="'+res.TypeB[index].tracking+'" target="_blank"><img src="'+res.TypeB[index].image+'" /></a>');
+              }
+            } else if (type=='express_page_type_c') {
+              if(res.TypeC.length > 0) {
+                var index = Math.floor(Math.random() * res.TypeC.length);
+                $this.append('<a href="'+res.TypeC[index].tracking+'" target="_blank"><img src="'+res.TypeC[index].image+'" /></a>');
+              }
+            } else if (type=='express_page_type_d') {
+              if(res.TypeD.length > 0) {
+                var index = Math.floor(Math.random() * res.TypeD.length);
+                $this.append('<a href="'+res.TypeD[index].tracking+'" target="_blank"><img src="'+res.TypeD[index].image+'" /></a>');
+              }
+            }
+            adVisible = true;
+          });
+        }
+      });
+    }
+  //]]>
+</script>
+</div>
+<!-- / Google analytics -->
+<!-- / Google Analytics JS -->
+<script>
+  //<![CDATA[
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  //]]>
+</script>
+<script>
+  //<![CDATA[
+    var pageTracker = _gat._getTracker("UA-1830856-4");
+    pageTracker._initData();
+    pageTracker._trackPageview();
+    $(document).ready(function() {
+      injectAds();
+    });
+  //]]>
+</script>
+
+<!-- / Segment -->
+<script type="text/javascript">
+  (function(){
+
+    // Create a queue, but don't obliterate an existing one!
+    var analytics = window.analytics = window.analytics || [];
+
+    // If the real analytics.js is already on the page return.
+    if (analytics.initialize) return;
+
+    // If the snippet was invoked already show an error.
+    if (analytics.invoked) {
+      if (window.console && console.error) {
+        console.error('Segment snippet included twice.');
+      }
+      return;
+    }
+
+    // Invoked flag, to make sure the snippet
+    // is never invoked twice.
+    analytics.invoked = true;
+
+    // A list of the methods in Analytics.js to stub.
+    analytics.methods = [
+      'trackSubmit',
+      'trackClick',
+      'trackLink',
+      'trackForm',
+      'pageview',
+      'identify',
+      'group',
+      'track',
+      'ready',
+      'alias',
+      'page',
+      'once',
+      'off',
+      'on'
+    ];
+
+    // Define a factory to create stubs. These are placeholders
+    // for methods in Analytics.js so that you never have to wait
+    // for it to load to actually record data. The `method` is
+    // stored as the first argument, so we can replay the data.
+    analytics.factory = function(method){
+      return function(){
+        var args = Array.prototype.slice.call(arguments);
+        args.unshift(method);
+        analytics.push(args);
+        return analytics;
+      };
+    };
+
+    // For each of our methods, generate a queueing stub.
+    for (var i = 0; i < analytics.methods.length; i++) {
+      var key = analytics.methods[i];
+      analytics[key] = analytics.factory(key);
+    }
+
+    // Define a method to load Analytics.js from our CDN,
+    // and that will be sure to only ever load it once.
+    analytics.load = function(key){
+      // Create an async script element based on your key.
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.async = true;
+      script.src = ('https:' === document.location.protocol
+        ? 'https://' : 'http://')
+        + 'cdn.segment.com/analytics.js/v1/'
+        + key + '/analytics.min.js';
+
+      // Insert our script next to the first script element.
+      var first = document.getElementsByTagName('script')[0];
+      first.parentNode.insertBefore(script, first);
+    };
+
+    // Add a version to keep track of what's in the wild.
+    analytics.SNIPPET_VERSION = '3.0.1';
+
+    // Load Analytics.js with your key, which will automatically
+    // load the tools you've enabled for your account. Boosh!
+    analytics.load('BZhckyCx5JYsaUCucLeqashIWIWnVCLh');
+
+    // Make the first page call to load the integrations. If
+    // you'd like to manually name or tag the page, edit or
+    // move this call however you'd like.
+    analytics.page();
+
+  })();
+</script>
+
+<script>
+  //<![CDATA[
+    $(document).ready(function(){
+      setInterval(function(){
+        document.getElementById('ga_express').contentWindow.location.reload(true);
+      }, 120000);
+    });
+  //]]>
+</script>
+<script src="../assets/javascripts/ads.js"></script>
+<script type="text/javascript">
+	var showImageAdBlocker = 0;
+	function cancelAdBlocker(){
+		document.getElementById("wrapperBlocker").remove();
+		document.body.style.overflow = 'auto';
+	}
+
+	function showImage(){
+		if(showImageAdBlocker ==0){
+            document.getElementById("imageGuide").style.display = 'block';
+            document.getElementById("wrapperBlockerStep1").style.display = 'none';
+			document.getElementById("wrapperBlockerStep2").style.display = 'block';
+			showImageAdBlocker = 1;
+		}else{
+			window.location.reload();
+		}
+	}
+	document.addEventListener('DOMContentLoaded', function(){
+        if(!document.getElementById('YrJUQgVhwzIx')){
+        	if((typeof version != "undefined" && version == 0) || (window.location.pathname != '/o-matic/' && window.location.pathname != '/editor/' && window.location.pathname != 'index.html' )){
+        		return false;
+        	}
+            dataLayer.push({ "event": "misc", "pageType": "adblocker" });
+        	var body = document.body;
+        	body.style.overflow = 'hidden';
+        	var wrapperNoFlash =	'<div id="wrapperBlocker" style="width:100%;height:100%;position: absolute;top: 0;font-family: Lato,sans-serif;overflow:auto;">\
+                                        <div style="width: 100%;height: 100%;position: fixed;top: 0;left: 0;background: #000;z-index: 999;opacity: 0.8;"></div>\
+        								<div id="wrapperBlockerStep1" style="-webkit-box-sizing: border-box;box-sizing: border-box;width: 500px;margin: 0 auto;text-align: center;z-index: 9999;background-color: #fff;padding: 30px;position: relative;margin-top: 78px;margin-bottom: 78px;border-radius: 10px;color: #000;padding-bottom: 40px;">\
+                                            <img src="../images/eye_icon.png" />\
+            								<h2 style="margin:0;padding:0;line-height: 50px;">Ad-blocker Detected</h2>\
+            								<p style="margin:0;font-size: 16px;line-height: 35px;">Hi Human! We\'ve detected that you are using an ad-blocker.</p>\
+            								<p style="margin:0;font-size: 16px;line-height: 35px;">Pixlr has remained free for so long due to the revenue from ads.</p>\
+            								<p style="margin:0;font-size: 16px;line-height: 35px;margin-bottom: 35px;">Please help us keep Pixlr free-to-use ^_^</p>\
+            								<span ga-on="click" ga-event-action="click" ga-event-category="adblocker" ga-event-label="step1Cancel" onclick="cancelAdBlocker();" style="cursor: pointer;text-transform: uppercase;padding: 13px;color: #000;margin-right: 20px;" href="javascript:void(0)">Cancel</span>\
+            								<span ga-on="click" ga-event-action="click" ga-event-category="adblocker" ga-event-label="step1Yes" onclick="showImage()" style="cursor: pointer;text-transform: uppercase;padding: 13px;color: #000;background: #00fff2;border-radius: 4px;margin-left: 20px;" href="javascript:void(0)">Yes, I\'ll whitelist Pixlr.com</span>\
+                                        </div>\
+                                        <div id="wrapperBlockerStep2" style="display:none;-webkit-box-sizing: border-box;box-sizing: border-box;width: 650px;margin: 0 auto;z-index: 9999;background-color: #fff;padding: 30px;position: relative;margin-top: 78px;margin-bottom: 78px;border-radius: 10px;color: #000;padding-bottom: 40px;">\
+                                            <h2 style="margin:0;padding:0;line-height: 50px;text-align: center;">How-to Whitelist</h2>\
+                                            <p style="margin:0;font-size: 16px;line-height: 35px;margin-bottom: 5px;">Click on your ad-blocker extension to reveal the dropdown menu.</p>\
+                                            <p style="margin:0;font-size: 16px;line-height: 25px;">For AdBlock: Select \'Don\'t run on pages on this domain\' to disable ad-blocker on Pixlr</p>\
+                                            <p style="margin:0;font-size: 16px;line-height: 25px;">For Adblock Plus: Click on \'Enabled on this site\' to disable ad-blocker on Pixlr</p>\
+                                            <p style="margin:0;font-size: 16px;line-height: 35px;margin-bottom: 35px;margin-top: 5px;">That\'s all. Once you have whitelisted Pixlr, click on \'Done\' to proceed normally!</p>\
+                                            <img id="imageGuide" style="margin: 0 auto;margin-bottom: 35px;margin-top: -15px;" src="../images/pixlr-ad-block-screenshot.jpg" />\
+                                            <div style="text-align: center;"><span ga-on="click" ga-event-action="click" ga-event-category="adblocker" ga-event-label="step2Yes" onclick="showImage()" style="cursor: pointer;text-transform: uppercase;padding: 13px;color: #000;background: #00fff2;border-radius: 4px;margin-left: 20px;" href="javascript:void(0)">Done! ^_^</span></div>\
+                                        </div>\
+                                    </div>';
+        	body.insertAdjacentHTML('beforeend',wrapperNoFlash);
+        }
+    });
+</script>
+<style type="text/css">
+    a:hover { background-color: initial!important;}
+</style>
+<script type="text/javascript">
+	function detectFlash(){
+		window.location.href='https://get.adobe.com/flashplayer';
+	}
+	document.addEventListener('DOMContentLoaded', function(){
+		var embFlash = document.getElementsByTagName('embed');
+		var body = document.body;
+		var appContent = document.getElementsByClassName("flash-app");
+		var adsContent = document.getElementsByClassName("pro-app-wrap");
+        if(embFlash.length <= 0){
+            noConfirm = 1;
+            dataLayer.push({ "event": "misc", "pageType": "flashguide" });
+        	appContent[0].style.display="none";
+        	if(adsContent.length > 0){
+        		adsContent[0].style.display="none";
+        	}
+        	body.style.background = '#fff';
+        	body.style.overflow = 'auto';
+        	body.style.paddingRight = '0';
+        	var wrapperNoFlash =	'<div style="width:100%;padding-top: 10%;" onclick="detectFlash()"><div id="wrapperNoFlash" style="padding: 10px;max-width: 580px;margin: 0 auto;text-align: center;font-family: Lato,sans-serif;">\
+        								<img style="margin-bottom: 10px;" src="../images/icon_flash.png" />\
+        								<h2>Hi there,</h2>\
+        								<p style="line-height: 25px;">We\'re quite sure you have Flash Player installed on your computer. So no worries, just click anywhere on the page and a prompt will appear for you to enable Flash.</p>\
+        								<p style="line-height: 25px;">If you have not downloaded Flash, you can click <strong><a style="color: #000;text-decoration: underline;" href="https://get.adobe.com/flashplayer">here</a></strong> to get it installed. :)</p>\
+        							</div></div>';
+        	body.insertAdjacentHTML('beforeend',wrapperNoFlash);
+        }
+    });
+</script>
+<!-- :javascript -->
+<!-- // alive on Dec 24 at 12am PST and is turned off on Jan 3 at 12pm PST -->
+<!-- var start = Date.parse("December 24 2016 00:00 PST"); -->
+<!-- var end = Date.parse("January 3 2017 12:00 PST"); -->
+<!-- var now = new Date().getTime(); -->
+<!-- if(now > start && now < end){ -->
+<!-- $("#top-right-banner").attr('src', '/images/graphic-holiday-pixlr-express-ad.png'); -->
+<!-- $("#top-right-banner-link").attr('href', 'https://graphic.com/landing.html'); -->
+<!-- } -->
+</body>
+
+<!-- Mirrored from pixlr.com/express/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Mar 2018 11:08:45 GMT -->
+</html>

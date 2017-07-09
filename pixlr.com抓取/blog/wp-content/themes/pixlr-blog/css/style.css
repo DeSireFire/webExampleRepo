@@ -1,0 +1,531 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900,400italic,700italic);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, h1, h2, h3, h4, h5, h6, #pixlr-blog .search-field, #pixlr-blog ::-webkit-input-placeholder {
+  color: #262626;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5em; }
+
+html {
+  font-size: 100%; }
+
+body {
+  background-color: #F9F9F9;
+  color: #262626; }
+
+a:link {
+  color: #55b6c2;
+  text-decoration: none; }
+  
+a:visited {
+  color: #bd4584;
+  text-decoration: none; }
+  a:link:hover,
+  a:visited:hover {
+    text-decoration: underline; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #262626;
+  font-weight: 700; }
+
+p {
+  line-height: 1.5em;
+  margin-bottom: 1em; }
+
+blockquote {
+  font-style: italic; }
+
+
+/* NEW CODE */
+#sidebar img{
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+ul, ol {
+    margin-bottom: 25px;
+    margin-left: 20px;
+    padding-left: 25px;
+}
+ul li, ol li {
+    list-style-position: outside;
+    list-style-type: initial;
+    margin-bottom: 10px;
+    color: #666666;
+    font-size: 1.125rem;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 1.5;
+}
+/* END NEW CODE */
+
+#pixlr-blog {
+  position: relative; }
+  #pixlr-blog #wrapper {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    position: relative; }
+    #pixlr-blog #wrapper.-disable-scroll {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: fixed; }
+  #pixlr-blog .main-header {
+    background-color: rgba(0, 0, 0, 0.85);
+    display: block;
+    height: 72px;
+    left: 0;
+    line-height: 72px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10; }
+    #pixlr-blog .main-header::after {
+      clear: both;
+      content: "";
+      display: table; }
+    #pixlr-blog .main-header .inner {
+      margin: 0 40px;
+      position: relative; }
+      #pixlr-blog .main-header .inner::after {
+        clear: both;
+        content: "";
+        display: table; }
+    #pixlr-blog .main-header a.logo {
+      color: white;
+      float: left;
+      height: 72px;
+      font-family: "Lato", sans-serif;
+      font-size: 32px;
+      font-weight: 400;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+    #pixlr-blog .main-header .nav {
+      float: left; }
+      @media (max-width: 1140px) {
+        #pixlr-blog .main-header .nav {
+          display: none;
+          margin-left: none; } }
+      #pixlr-blog .main-header .nav li {
+        display: inline-block;
+        margin-left: 40px; }
+      #pixlr-blog .main-header .nav a:link,
+      #pixlr-blog .main-header .nav a:visited {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        text-transform: uppercase; }
+        #pixlr-blog .main-header .nav a:link:hover,
+        #pixlr-blog .main-header .nav a:visited:hover {
+          color: white;
+          text-decoration: none; }
+  #pixlr-blog #sidebar-open {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-image: url("../img/hamburger.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    display: none;
+    cursor: pointer;
+    height: 72px;
+    width: 72px;
+    position: absolute;
+    right: 0; }
+    @media (max-width: 1140px) {
+      #pixlr-blog #sidebar-open {
+        display: block; } }
+  #pixlr-blog .main-footer {
+    width: 100%;
+    background: black;
+    bottom: 0;
+    position: relative; }
+    #pixlr-blog .main-footer a:link,
+    #pixlr-blog .main-footer a:visited {
+      font-size: 14px;
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 1.5em;
+      letter-spacing: 0px;
+      text-align: left;
+      text-display: none;
+      text-transform: uppercase;
+      color: white; }
+    #pixlr-blog .main-footer .top,
+    #pixlr-blog .main-footer .bottom {
+      padding: 40px; }
+    #pixlr-blog .main-footer .top::after {
+      clear: both;
+      content: "";
+      display: table; }
+    #pixlr-blog .main-footer .products,
+    #pixlr-blog .main-footer .links {
+      float: right;
+      width: 25%; }
+      @media (max-width: 768px) {
+        #pixlr-blog .main-footer .products,
+        #pixlr-blog .main-footer .links {
+          float: none;
+          margin-bottom: 2em;
+          width: auto; } }
+    #pixlr-blog .main-footer .autodesk-logo {
+      float: left;
+      width: 150px; }
+      @media (max-width: 768px) {
+        #pixlr-blog .main-footer .autodesk-logo {
+          float: none;
+          margin-bottom: 2em; } }
+    #pixlr-blog .main-footer .copyright {
+      font-size: 12px;
+      font-size: 0.75rem;
+      font-weight: 400;
+      line-height: 2em;
+      letter-spacing: 0px;
+      color: white; }
+    #pixlr-blog .main-footer ul.legal li {
+      display: inline-block;
+      margin-right: 1em; }
+      #pixlr-blog .main-footer ul.legal li a:link,
+      #pixlr-blog .main-footer ul.legal li a:visited {
+        font-size: 12px;
+        font-size: 0.75rem;
+        font-weight: 400;
+        line-height: 2em;
+        letter-spacing: 0px;
+        text-align: center;
+        text-display: none;
+        text-transform: none; }
+  #pixlr-blog #sidebar-close {
+    width: 72px;
+    height: 72px;
+    background-image: url("../img/close.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+    margin: 0;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 200; }
+    @media (max-width: 1288px) {
+      #pixlr-blog #sidebar-close {
+        display: block; } }
+  #pixlr-blog #sidebar {
+    width: 400px;
+    height: auto;
+    text-align: left;
+    text-display: none;
+    text-transform: none;
+    background: #F9F9F9;
+    float: right; }
+    #pixlr-blog #sidebar > .content {
+      width: 100%;
+      height: auto; }
+      #pixlr-blog #sidebar > .content > .inner {
+        margin: 40px; }
+    #pixlr-blog #sidebar .nav {
+      display: none; }
+      @media (max-width: 1288px) {
+        #pixlr-blog #sidebar .nav {
+          display: block;
+          margin-bottom: 40px; } }
+    #pixlr-blog #sidebar h1, #pixlr-blog #sidebar h2, #pixlr-blog #sidebar h3, #pixlr-blog #sidebar h4, #pixlr-blog #sidebar h5, #pixlr-blog #sidebar h6 {
+      font-size: 16px;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.5em;
+      letter-spacing: 0px;
+      color: #333333; }
+    #pixlr-blog #sidebar aside {
+      margin-bottom: 2em; }
+    #pixlr-blog #sidebar a:link {
+      font-size: 14px;
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 1.5em;
+      letter-spacing: 0px;
+      color: #55b6c2; }
+      
+    #pixlr-blog #sidebar a:visited {
+      font-size: 14px;
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 1.5em;
+      letter-spacing: 0px;
+      color: #bd4584; }
+      
+      #pixlr-blog #sidebar a:link:hover,
+      #pixlr-blog #sidebar a:visited:hover {
+        color: #bd4584; }
+      #pixlr-blog #sidebar a:link:active,
+      #pixlr-blog #sidebar a:visited:active {
+        color: #bd4584; }
+    @media (max-width: 1288px) {
+      #pixlr-blog #sidebar {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        text-display: none;
+        text-transform: uppercase;
+        background-color: rgba(6, 0, 13, 0.95);
+        color: #F2F2F2;
+        display: none;
+        position: fixed;
+        float: none;
+        top: 0;
+        left: 0;
+        overflow-y: auto;
+        z-index: 150; }
+        #pixlr-blog #sidebar.-active {
+          display: block; }
+        #pixlr-blog #sidebar > .content {
+          width: 320px;
+          height: auto;
+          display: inline-block;
+          margin-bottom: 33%; }
+          #pixlr-blog #sidebar > .content h1, #pixlr-blog #sidebar > .content h2, #pixlr-blog #sidebar > .content h3, #pixlr-blog #sidebar > .content h4, #pixlr-blog #sidebar > .content h5, #pixlr-blog #sidebar > .content h6 {
+            color: #F2F2F2;
+            line-height: 3em; }
+          #pixlr-blog #sidebar > .content a:link {
+            color: #55b6c2; }
+          #pixlr-blog #sidebar > .content a:visited {
+            color: #bd4584; }
+            #pixlr-blog #sidebar > .content a:link:hover,
+            #pixlr-blog #sidebar > .content a:visited:hover {
+              color: #bd4584; }
+          #pixlr-blog #sidebar > .content li {
+            line-height: 3em;
+            list-style: none; } }
+  #pixlr-blog .widget_search {
+    width: 100%;
+    text-align: center;
+    text-display: none;
+    text-transform: none;
+    position: relative; }
+    #pixlr-blog .widget_search > .widget-title {
+      display: none; }
+  #pixlr-blog .search-field {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 48px;
+    text-align: left;
+    text-display: none;
+    text-transform: none;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    background: transparent;
+    box-sizing: border-box;
+    border: 1px solid #55b6c2;
+    height: 48px !important;
+    margin: 0 auto;
+    padding: 0 5%; }
+    #pixlr-blog .search-field:focus {
+      border: 1px solid #bd4584;
+      outline: none; }
+    @media (max-width: 1288px) {
+      #pixlr-blog .search-field {
+        width: 100%;
+        text-align: center;
+        text-display: none;
+        text-transform: none;
+        color: white;
+        display: inline-block; } }
+  #pixlr-blog ::-webkit-input-placeholder {
+    color: #40BFFF;
+    font-weight: 300;
+    text-transform: lowercase; }
+  #pixlr-blog .screen-reader-text {
+    display: none; }
+  #pixlr-blog .search-submit {
+    display: none; }
+  #pixlr-blog .main-content {
+    width: 1248px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 72px;
+    padding: 40px;
+    position: relative; }
+    #pixlr-blog .main-content::after {
+      clear: both;
+      content: "";
+      display: table; }
+    @media (max-width: 1288px) {
+      #pixlr-blog .main-content {
+        width: 100%;
+        height: auto;
+        padding: 40px 0; } }
+    #pixlr-blog .main-content > .content {
+      width: 847px;
+      height: auto;
+      float: left;
+      position: relative; }
+      @media (max-width: 1288px) {
+        #pixlr-blog .main-content > .content {
+          width: 100%;
+          height: auto; } }
+    #pixlr-blog .main-content .content-header {
+      padding: 1em; }
+  #pixlr-blog .post {
+    background: white;
+    color: #333333;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    max-width: 768px; }
+    @media (max-width: 480px) {
+      #pixlr-blog .post {
+        width: 100%;
+        height: auto; } }
+    #pixlr-blog .post .inner {
+      padding: 40px; }
+      @media (max-width: 480px) {
+        #pixlr-blog .post .inner {
+          padding: 20px; } }
+    #pixlr-blog .post img {
+      width: 100%;
+      height: auto;
+      max-width:100%; }
+    #pixlr-blog .post .title,
+    #pixlr-blog .post .title a:link {
+      font-size: 32px;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.2em;
+      letter-spacing: 0px;
+      color: #55b6c2;
+      margin-bottom: 20px;
+      text-decoration: none; }
+    #pixlr-blog .post .title a:visited {
+      font-size: 32px;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.2em;
+      letter-spacing: 0px;
+      color: #bd4584;
+      margin-bottom: 20px;
+      text-decoration: none; }
+    #pixlr-blog .post .meta {
+      font-size: 12px;
+      font-size: 0.75rem;
+      font-weight: 400;
+      line-height: 2em;
+      letter-spacing: 0px;
+      color: #666666;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 0px; }
+      #pixlr-blog .post .meta a:link, #pixlr-blog .post .meta a:visited {
+        color: #150040; }
+    #pixlr-blog .post .body {
+      margin-bottom: 40px; }
+      #pixlr-blog .post .body h1, #pixlr-blog .post .body h2, #pixlr-blog .post .body h3, #pixlr-blog .post .body h4, #pixlr-blog .post .body h5, #pixlr-blog .post .body h6 {
+        font-size: 24px;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.5;
+        letter-spacing: 0px;
+        color: #333333;
+        margin-bottom: 10px; }
+      #pixlr-blog .post .body p {
+        font-size: 18px;
+        font-size: 1.125rem;
+        font-weight: 300;
+        line-height: 1.5;
+        letter-spacing: 0px;
+        color: #666666;
+        margin-bottom: 1em; }
+      #pixlr-blog .post .body strong {
+        font-weight: 700; }
+      #pixlr-blog .post .body img,  #pixlr-blog .page .body img {
+        width: 100%;
+        height: auto;
+        max-width: 100%; }
+        #pixlr-blog .post .body img ul li, #pixlr-blog .post .body img ol li {
+          list-style-type: disc; }
+  #pixlr-blog .posts-nav {
+    margin: 0 auto;
+    margin-bottom: 80px;
+    width: 90%;
+    padding: 0 5%; }
+  #pixlr-blog .post-nav::after,
+  #pixlr-blog .nav-links::after {
+    clear: both;
+    content: "";
+    display: table; }
+  #pixlr-blog .post-nav a:link,
+  #pixlr-blog .post-nav a:visited,
+  #pixlr-blog .nav-links a:link,
+  #pixlr-blog .nav-links a:visited {
+    font-size: 12px;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: 2px;
+    text-align: left;
+    text-display: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid #150040;
+    color: #150040;
+    display: inline-block;
+    padding: 0.5em 1em; }
+    #pixlr-blog .post-nav a:link:hover,
+    #pixlr-blog .post-nav a:visited:hover,
+    #pixlr-blog .nav-links a:link:hover,
+    #pixlr-blog .nav-links a:visited:hover {
+      text-align: left;
+      text-display: none;
+      text-transform: uppercase; }
+  #pixlr-blog .post-nav-previous {
+    float: left; }
+  #pixlr-blog .post-nav-next {
+    float: right; }

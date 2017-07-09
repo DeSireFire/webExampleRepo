@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from pixlr.com/blog/support/category/developer-and-api/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Mar 2018 11:37:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+	<meta charset="UTF-8">
+	<meta content="initial-scale=1, width=device-width" name="viewport" >
+
+	<link href="http://gmpg.org/xfn/11" rel="profile">
+	<link href="../../../xmlrpc.php" rel="pingback">
+	<link href="../../../wp-content/themes/pixlr-blog/css/style.css" rel="stylesheet">
+
+	<link rel="shortcut icon" href= "http://img-cdn.pixlr.com/images/pixlr-favicon-16x16.ico">
+	<link rel="icon" href= "http://img-cdn.pixlr.com/images/pixlr-favicon-16x16.ico" >
+
+	<title>Developer and API &#8211; Pixlr Blog</title>
+<link rel='dns-prefetch' href='http://s0.wp.com/' />
+<link rel='dns-prefetch' href='http://s.gravatar.com/' />
+<link rel='dns-prefetch' href='http://platform-api.sharethis.com/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Pixlr Blog &raquo; Feed" href="../../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Pixlr Blog &raquo; Comments Feed" href="../../../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Pixlr Blog &raquo; Developer and API Category Feed" href="feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/pixlr.com\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.5"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='epkb-public-styles-css'  href='../../../wp-content/plugins/echo-knowledge-base/css/public-styles.min41fe.css?ver=3.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='../../../wp-includes/css/dashicons.min341d.css?ver=4.8.5' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-jquery-ui-dialog-css'  href='../../../wp-includes/css/jquery-ui-dialog.min341d.css?ver=4.8.5' type='text/css' media='all' />
+<link rel='stylesheet' id='autodesk-blog-style-css'  href='../../../wp-content/themes/pixlr-blog/style341d.css?ver=4.8.5' type='text/css' media='all' />
+<link rel='stylesheet' id='wordpress-popular-posts-css'  href='../../../wp-content/plugins/wordpress-popular-posts/style/wpp7984.css?ver=3.3.4' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='../../../wp-content/plugins/jetpack/css/jetpack5597.css?ver=5.0' type='text/css' media='all' />
+<script type='text/javascript' src='../../../wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'></script>
+<script type='text/javascript' src='../../../wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'></script>
+<script type='text/javascript' src='../../../wp-includes/js/jquery/ui/core.mine899.js?ver=1.11.4'></script>
+<script type='text/javascript' src='../../../wp-includes/js/jquery/ui/widget.mine899.js?ver=1.11.4'></script>
+<script type='text/javascript' src='../../../wp-includes/js/jquery/ui/mouse.mine899.js?ver=1.11.4'></script>
+<script type='text/javascript' src='../../../wp-includes/js/jquery/ui/resizable.mine899.js?ver=1.11.4'></script>
+<script type='text/javascript' src='../../../wp-includes/js/jquery/ui/draggable.mine899.js?ver=1.11.4'></script>
+<script type='text/javascript' src='../../../wp-includes/js/jquery/ui/button.mine899.js?ver=1.11.4'></script>
+<script type='text/javascript' src='../../../wp-includes/js/jquery/ui/position.mine899.js?ver=1.11.4'></script>
+<script type='text/javascript' src='../../../wp-includes/js/jquery/ui/dialog.mine899.js?ver=1.11.4'></script>
+<script type='text/javascript' src='../../../wp-includes/js/jquery/ui/effect.mine899.js?ver=1.11.4'></script>
+<script type='text/javascript' src='../../../wp-includes/js/jquery/ui/effect-bounce.mine899.js?ver=1.11.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var epkb_vars = {"msg_try_again":"Please try again later.","error_occurred":"Error occurred","not_saved":"Error occurred - configuration NOT saved.","unknown_error":"unknown error","reload_try_again":"Please reload the page and try again.","save_config":"Saving configuration","input_required":"Input is required","reduce_name_size":"Warning: Please reduce your name size. Tab will only show first 25 characters"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../../wp-content/plugins/echo-knowledge-base/js/public-scripts.min41fe.js?ver=3.0.1'></script>
+<script type='text/javascript' src='../../../../../platform-api.sharethis.com/js/sharethis.js#product=ga'></script>
+<link rel='https://api.w.org/' href='../../../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../../xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.8.5" />
+
+<link rel='dns-prefetch' href='http://v0.wordpress.com/'>
+<style type='text/css'>img#wpstats{display:none}</style>
+</head>
+
+<body class="archive tax-epkb_post_type_1_category term-developer-and-api term-34">
+<div id="pixlr-blog" class="everything">
+<div id="wrapper">
+
+<header class='main-header'>
+<div class='inner'>
+	<a class='logo' href='../../../../index.html'><img class="logo-image" src="../../../../../img-cdn.pixlr.com/images/pixlr-logo-icon-50x50.png" style="margin-top:18px;width:35px;float:left;margin-right:5px;"> Pixlr</a>
+	<ul class='nav'>
+		<li><a href='../../../../web.html'>Web Apps</a></li>
+		<li><a href='../../../../mobile.html'>Mobile</a></li>
+		<li><a href='../../../index.html'>Blog</a></li>
+	</ul>
+	<div id='sidebar-open'></div>
+</div>
+</header>
+
+<div class="main-content">
+
+<div class="sidebar" id="sidebar">
+<div id="sidebar-close"></div>
+<div class="content">
+	<div class="inner">
+		<ul class="nav">
+			<li><a href="../../../../desktop.html">Desktop</a></li>
+			<li><a href="../../../../mobile.html">Mobile</a></li>
+			<li><a href="../../../../web.html">Web Apps</a></li>
+		</ul>
+		<aside class="widget widget_search"><form role="search" method="get" class="search-form" action="http://pixlr.com/blog/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form></aside>	</div>
+</div>
+</div>
+
+<div class="content">
+	<div class="inner">
+
+<div class="page">
+<header class="page-header">
+<h1 class="page-title">Category: Developer and API</h1></header>
+<article class="post" id="post-2289">
+	<div class="inner">
+	<header class="header">
+				<h1 class="title"><a href="../../pixlr-api/index.html" rel="bookmark">Pixlr API</a></h1>	</header>
+	<div class="body"><p>The Pixlr API enables you to embed Pixlr web applications on your own site. Many advanced photo editing features available on Pixlr.com can easily be added to your site with the API. Using the API is completely free and does not require a commercial license (nor do we offer one).</p>
+<p><strong>Using the Pixlr Web API</strong></p>
+<p>The /editor and /express pages take special parameters either as querystring or form parameters. You don’t have to do anything special to get the application to recognize the parameters as we check for them on every request.</p>
+<p><strong>Javascript library</strong></p>
+<p>Our javascript library (below) is a great resource for quick and simple API implementation.</p>
+<p>We also have a site with examples on how to use the js library: <a href="http://developer.pixlr.com/">developer.pixlr.com</a></p>
+<p>You can download the entire javascript library <a href="../../../../lib/pixlr.js">here</a>.</p>
+<p><strong>In parameters (what you send to us)</strong></p>
+<table cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">Name</span></span></td>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">Description</span></span></td>
+</tr>
+<tr>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">referrer</span></span></td>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">The name of the referring service for example &#8220;Your site name&#8221; or &#8220;Facebook&#8221;</span></span></td>
+</tr>
+<tr>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">icon</span></span></td>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">A url to a 16*16 icon to be shown at the save tab</span></span></td>
+</tr>
+<tr>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">exit</span></span></td>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">The URL to send the visitor if the user click exit/close</span></span></td>
+</tr>
+<tr>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">image</span></span></td>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">A URL to the image or the post raw data of the image to open</span></span></td>
+</tr>
+<tr>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">title</span></span></td>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">The title of the opened image</span></span></td>
+</tr>
+<tr>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">type</span></span></td>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">The filetype of the image, just type no &#8220;.&#8221;, the apps will try to get the type from the URL if type param is not provided.</span></span></td>
+</tr>
+<tr>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">method</span></span></td>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">The way we send the image information, &#8220;GET&#8221; or &#8220;POST&#8221;, default is &#8220;GET&#8221;</span></span></p>
+<p><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">If you set this to POST then you have to have a <a href="http://www.adobe.com/devnet/articles/crossdomain_policy_file_spec.html">crossdomain.xml</a> in the root of your web application. And you need to add pixlr.com to the list of valid domains (or just <a href="../../../../crossdomain.xml">copy ours</a>)</span></span></td>
+</tr>
+<tr>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">target</span></span></td>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">The URL to which we send the image information when saving</span></span></td>
+</tr>
+<tr>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">redirect</span></span></td>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">Set to &#8220;false&#8221; if you don&#8217;t want the browser to follow the save post. (i.e the user stay in the editor after saving.)</span></span></td>
+</tr>
+<tr>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">locktarget</span></span></td>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">Remove the possibility for the user to &#8220;save to computer&#8221; and other service in Pixlr Editor</span></span></td>
+</tr>
+<tr>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">locktitle</span></span></td>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">Lock the image title so the user can&#8217;t change it</span></span></td>
+</tr>
+<tr>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">locktype</span></span></td>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">Lock the save format, values are jpg, png, bmp, pxd or source, do not include &#8220;.&#8221;</span></span></td>
+</tr>
+<tr>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">quality</span></span></td>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">Set the jpg quality when the user saves the image, values are 0-100</span></span></td>
+</tr>
+<tr>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">copy</span></span></td>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">Shows a checkbox on the save dialog that lets the user select &#8220;Save as copy&#8221;</span></span></td>
+</tr>
+<tr>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">maxwidth</span></span></td>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">Set the maximum width of an image the user saves</span></span></td>
+</tr>
+<tr>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">maxheight</span></span></td>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">Set the maximum height of an image the user saves</span></span></td>
+</tr>
+<tr>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">wmode (Advanced)</span></span></td>
+<td valign="top"><span class="wysiwyg-font-size-medium"><span style="color: #181818; font-family: Times;">Change the flash wmode (transparent, opaque, window etc) when you need to use z-index and float HTML over the flash area</span></span></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p><strong>Out parameters (what we send to you)</strong></p>
+<table cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top"><span style="color: #181818; font-family: Times;">Name</span></td>
+<td valign="top"><span style="color: #181818; font-family: Times;">Description</span></td>
+</tr>
+<tr>
+<td valign="top"><span style="color: #181818; font-family: Times;">image</span></td>
+<td valign="top"><span style="color: #181818; font-family: Times;">The content of this parameter depends on the value of the &#8220;method&#8221; in-parameter.</span></p>
+<p><span style="color: #181818; font-family: Times;">If method was GET the value of image is an url to where we saved the image.</span></p>
+<p><span style="color: #181818; font-family: Times;">If method was POST the value of image is the actual image.</span></td>
+</tr>
+<tr>
+<td valign="top"><span style="color: #181818; font-family: Times;">title</span></td>
+<td valign="top"><span style="color: #181818; font-family: Times;">The title of the image the user typed in when saving.</span></td>
+</tr>
+<tr>
+<td valign="top"><span style="color: #181818; font-family: Times;">type</span></td>
+<td valign="top"><span style="color: #181818; font-family: Times;">The type of image can be: jpg, png, bmp or pxd.</span></td>
+</tr>
+<tr>
+<td valign="top"><span style="color: #181818; font-family: Times;">state</span></td>
+<td valign="top"><span style="color: #181818; font-family: Times;">The state of the image, can be &#8220;new&#8221;, &#8220;copy&#8221;, &#8220;replace&#8221;. New is when the user open/creates the image in the editor. Copy is when the image is from the API and the image checked &#8220;Save as copy&#8221;.</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Pixlr document format</strong></p>
+<p>The Pixlr file format (*.pxd) is a compressed binary format designed to enable layered files to be saved quickly, at high-quality and smaller file sizes.</p>
+<p>The .pxd file is compressed with zlib to reduce the file size. The uncompressed data is then ordered into two main sections: the header and the layer sections. The header includes, pxd version, color-mode, width, height and number of layers.</p>
+<p><strong>Pixlr applications</strong></p>
+<p>Today we have four applications in our family of products:</p>
+<ul>
+<li>Pixlr (formerly Pixlr Express) will meet the needs of most photo enthusiasts, and is available for your Windows or Mac Computer, or iPhone or Android Smartphone. Pixlr is also available for use in your browser at www.pixlr.com. This app is built in Flash and requires the Flash plug-in to work.</li>
+<li>Pixlr Editor is great for photo enthusiasts who are looking for a sophisticated photo editor and is available for use in your browser at www.pixlr.com. This app is built in Flash and requires the Flash plug-in to work.</li>
+<li>Pixlr-o-matic is designed for photo enthusiasts who want to make quick fixes and share their photos fast. Pixlr-o-matic is available for your iPhone and Android smartphone and in your browser at www.pixlr.com. This app is built in Flash and requires the Flash plug-in to work.</li>
+<li>Google Chrome fans will enjoy editing their photos with Pixlr Touch Up. Put the finishing touches on your photos with this free offline photo editor from Autodesk. Automatically remove unwanted details from your photos so it looks like they were never there. Pixlr Touch Up includes all your essential editing tools including crop, resize, rotate, effects, and more. You can also open and save files directly to and from Google Drive. Visit the Google Chrome Web Store to download Pixlr Touch Up. This app is not built in Flash. It uses WebGL and is ideal for Chromebook users.</li>
+</ul>
+<p><strong>Are user images kept private?</strong></p>
+<p>Yes. Images edited with our online applications are opened directly from the user&#8217;s computer into our online application. We don&#8217;t see them in any way, and they don&#8217;t leave the computer. Images edited using embedded versions of a Pixlr online applications are temporarily stored on our servers but deleted after 5 minutes.</p>
+<p><strong>Can I embed the Pixlr online applications into my own website?</strong></p>
+<p>We know that a many people love our software and want to use it on their own sites. It&#8217;s free, just go to <a href="http://developer.pixlr.com/">the API page</a> and go for it!</p>
+</div>
+	<!--
+	<footer class="post-footer">
+			</footer>
+	-->
+	</div>
+</article>
+</div>
+
+</div>
+</div><!-- end content -->
+</div><!-- end main-content -->
+
+<div class='main-footer'>
+  <div class='top'>
+    <ul class='links'>
+      <li><a href='https://www.pixlr.com/support'>Support</a></li>
+      <li><a href='../../../index.html'>Blog</a></li>
+      <li><a href="http://madewithpixlr.com/">Made With Pixlr</a></li>
+    </ul>
+    <ul class='links'>
+      <li><a href="../../../../software-license-agreements.html">Licensing</a></li>
+      <li><a href="../../../../privacy-policy.html">Privacy Policy</a></li>
+    </ul>
+    <ul class='products'>
+      <li><a href='../../../../mobile.html'>Pixlr <span>Mobile</span></a></li>
+      <li><a href='../../../../web.html'>Pixlr <span>Web Apps</span></a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="footer-bottom">
+  <div class="wrap-footer-bottom">
+    <div class="wrap-client">
+      <a href="https://www.123rf.com/" target="_blank">
+        <img class="img123rf" src="../../../../../img-cdn.pixlr.com/images/logo_123rf_2x.png">
+        <p>Royalty-free</p>
+        <p>Digital Media Library</p>
+      </a>
+    </div>
+    <div class="wrap-client">
+      <a href="http://www.designs.net/" target="_blank">
+        <img class="design" src="../../../../../img-cdn.pixlr.com/images/logo_dsn_2x.png">
+        <p>Premium Design</p>
+        <p>Resources</p>
+      </a>
+    </div>
+    <div class="wrap-client">
+      <a href="http://www.stockunlimited.com/" target="_blank">
+        <img class="stockunlimited" src="../../../../../img-cdn.pixlr.com/images/logo_sui_2x.png">
+        <p>Unlimited Content</p>
+        <p>Unlimited Creativity</p>
+      </a>
+    </div>
+    <div class="wrap-client">
+      <a href="https://thehungryjpeg.com/" target="_blank">
+        <img class="hungry" src="../../../../../img-cdn.pixlr.com/images/logo_thj_2x.png">
+        <p>Marketplace of Premium</p>
+        <p>Design Bundles</p>
+      </a>
+    </div>
+    <div class="wrap-client">
+      <a href="https://craftbundles.com/" target="_blank">
+        <img class="bundles" src="../../../../../img-cdn.pixlr.com/images/logo_cb_2x.png">
+        <p>High Quality</p>
+        <p>Craft Resources</p>
+      </a>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<style type="text/css">
+.footer-bottom {
+  background-color: #333;
+  overflow: hidden;
+  padding: 20px;
+  padding-right: 0;
+}
+.footer-bottom .wrap-footer-bottom {
+  max-width: 835px;
+  margin: 0 auto;
+}
+.footer-bottom .wrap-client a:link, .footer-bottom .wrap-client a:visited, .footer-bottom .wrap-client a:hover {
+  text-transform: none;
+  text-decoration: none;
+  color: #b2b2b2;
+}
+.footer-bottom .wrap-client img.img123rf {
+  max-width: 105px;
+}
+.footer-bottom .wrap-client img.inmagine {
+  max-width: 120px;   
+}
+.footer-bottom .wrap-client img.stockunlimited {
+  max-width: 120px;
+}
+.footer-bottom .wrap-client img.design {
+  max-width: 110px;
+}
+.footer-bottom .wrap-client img.hungry {
+  max-width: 115px;
+}
+.footer-bottom .wrap-client img.bundles {
+  max-width: 120px;
+}
+.footer-bottom .wrap-client {
+  width: 16.66%;
+  float: left;
+  min-width: 147px;
+  padding: 10px;
+}
+.footer-bottom .wrap-client p {
+  font-size: 12px;
+  line-height: 15px;
+  color: #b2b2b2;
+  margin: 0 !important;
+}
+</style>
+
+</div><!-- end #wrapper -->
+</div><!-- end #pixlr -->
+
+<!-- scripts -->
+<script src="../../../wp-content/themes/pixlr-blog/js/vendor/velocity.js"></script>
+<script src="../../../wp-content/themes/pixlr-blog/js/blog.js"></script>
+<script src="../../../wp-content/themes/pixlr-blog/js/pixlr.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1830856-12', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+
+<!-- Mirrored from pixlr.com/blog/support/category/developer-and-api/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Mar 2018 11:37:47 GMT -->
+</html><script type='text/javascript' src='../../../../../stats.wp.com/e-201812.js' async defer></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:5.0',blog:'95986093',post:'0',tz:'0',srv:'pixlr.com'} ]);
+	_stq.push([ 'clickTrackerInit', '95986093', '0' ]);
+</script>
