@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://www.amemv.com/i18n/aboutus/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>【悬赏台】Awesome Me-Amemv.com</title>
+    <meta charset="utf-8">
+    <meta http-equiv="”Cache-Control”" content="”no-transform”">
+    <meta http-equiv="”Cache-Control”" content="”no-siteapp”">
+
+    <meta name="keywords" content="抖音、抖音音乐、抖音短视频、抖音官网、amemv">
+    <meta name="description" content="抖音(Amemv.com)，是一款音乐短视频软件，分享你和你的世界！让崇拜从这里开始！">
+
+    <link rel="shortcut icon" href="http://127.0.0.1/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
+    <link rel="stylesheet" href="./css/base_84cc49d.css">
+    
+
+
+    <!--[if IE]><script src="//s3a.bytecdn.cn/aweme/resource/web_i18n/static/script/lib/fix-ie8_e8a0650.js"></script><![endif]-->
+    <script async="" src="./js/analytics.js"></script><script src="./js/core_1f49c51.js"></script>
+    
+
+    
+
+    
+    <script>
+var gaAccount = window.AME_GA_ID || 'UA-75850242-4';
+
+var _gaq = _gaq || [];
+var gaqpush=function(){};
+var gaevent=function(){};
+var gapageview=function(){};
+var trackPV = gapageview;
+
+var sampleRate = 100;
+
+function initGA(){
+
+    if(sampleRate && gaAccount){
+        window.onerror = function(message, file, line) {
+            var msg = message,
+                f = file,
+                l = line;
+            if(typeof message === 'object') {
+                msg = message.message;
+                f = message.fileName;
+                l = message.lineNumber;
+            }
+            var sFormattedMessage = '[' + f + ' (' + l + ')]' + msg;
+            window.gaevent ? gaevent('Exceptions', sFormattedMessage, location.pathname + '::::' + navigator.userAgent) : '';
+        };
+
+        var test_channel = "",
+            test_version = "",
+            utm_source = "";
+
+        // var ua = navigator.userAgent;
+
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        // Replace with your property ID.
+        ga('create', gaAccount, {'sampleRate': sampleRate});
+
+        //Init GA Function
+        gapageview = function(pageName) {
+            ga('send', 'pageview', pageName);
+            console.log('ga:pageview', pageName);
+        };
+
+        gaqpush = function(ga_event, ga_label){
+            gaevent('event',ga_event,ga_label);
+        };
+
+        gaevent = function(category, action, label, value){
+            if(test_channel.indexOf(action) >-1) label = label+test_version;
+            console.log("ga:"+category+","+action+","+label);
+            if(category != 'event') {
+                ga('send', 'event', category, action, label, typeof value !== "undefined" ? value: 1);
+            }
+            if(typeof window.baevent == "function") {
+                baevent(category, action, label, value);
+            }
+        };
+
+        gapageview(window.PAGEVIEW_NAME);
+
+        $("html").on('click', '[ga_event]', function(e){
+            var $this =  $(this);
+            var ga_category = $this.attr('ga_category') || 'event';
+            var ga_event = $this.attr('ga_event');
+            var ga_label = $this.attr('ga_label');
+            gaevent(ga_category,ga_event,ga_label);
+            if($this.is('a')){
+                var href = $this.attr('href')||'', target = this.target;
+                if(!( href[0]==='#' || target === "_blank" || e.isDefaultPrevented())) {
+                    setTimeout(function(){
+                        location.href = href
+                    },400);
+                    return false
+                }
+            }
+        });
+    }
+}
+
+initGA();
+</script>
+
+</head>
+<body style="position: relative; margin-top: 0pxpx !important;">
+    
+
+<header class="header">
+   <div class="container">
+        <div class="logo-warpper">
+            <a class="logo" href="http://127.0.0.1/">
+            </a>
+        </div>
+        <div class="name-warpper">
+            <a class="app-name" href="http://127.0.0.1/">悬赏台</a>
+            <a class="app-slogen" href="http://127.0.0.1/"> | 悬赏任务来临</a>
+        </div>
+        <nav class="nav-warpper">
+            <a class="active" href="http://127.0.0.1/">主页</a>
+            <span>|</span>
+            <a  href="http://127.0.0.1/aboutus/">联系我们</a>
+            <span>|</span>
+            <a  href="http://127.0.0.1/agreement/">服务条款</a>
+             <span>|</span> 
+             <a  href="http://127.0.0.1/privacy/">用户隐私</a> 
+        </nav>
+
+   </div>
+</header>
+
+    <div class="main-content-block">
+    
+<section>
+    <div class="container">
+        <div class="text-warpper">
+            <h2>联系我们</h2>
+            <p>官方网站: <a class="address" href="http://127.0.0.1/">www.***.com</a></p>
+            <p>邮箱: </p>
+        </div>
+    </div>
+</section>
+
+    </div>
+    
+
+<footer class="footer">
+    <div class="container">
+        <div class="infomation">
+            <p>
+                2016&nbsp;&copy;&nbsp;抖音短视频&nbsp;www.amemv.com&nbsp;|&nbsp;京ICP备16016397号-2&nbsp;|&nbsp;北京微播视界科技有限公司
+            </p>
+            <p>地址&nbsp;:&nbsp;北京市东城区体育馆西路7号14幢一层423A&nbsp;|&nbsp;联系电话&nbsp;:&nbsp;010-58732757</p>
+        </div>
+   </div>
+</footer>
+
+
+
+
+<div style="position: static; width: 0px; height: 0px; border: none; padding: 0px; margin: 0px;"><div id="trans-tooltip"><div id="tip-left-top" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-left-top.png);"></div><div id="tip-top" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-top.png) repeat-x;"></div><div id="tip-right-top" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-right-top.png);"></div><div id="tip-right" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-right.png) repeat-y;"></div><div id="tip-right-bottom" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-right-bottom.png);"></div><div id="tip-bottom" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-bottom.png) repeat-x;"></div><div id="tip-left-bottom" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-left-bottom.png);"></div><div id="tip-left" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-left.png);"></div><div id="trans-content"></div></div><div id="tip-arrow-bottom" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-arrow-bottom.png);"></div><div id="tip-arrow-top" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-arrow-top.png);"></div></div></body></html>
