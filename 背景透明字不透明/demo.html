@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>opacity</title>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding: 50px;
+    background: url(http://static.cnblogs.com/images/logo_small.gif) 0 0 repeat;
+}
+ 
+.demo{
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+.demo-bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    width: 200px;
+    height: 200px;
+    background-color:#000000;
+    filter:Alpha(opacity=50);
+    background-color: rgba(0,0,0,0.5);
+}
+.demo-txt{
+    position: relative;
+    z-index: 1;
+    color: #FFFFFF;
+}
+</style>
+</head>
+<body>   
+ 
+<div class="demo">
+    <div class="demo-bg"></div><!-- 透明背景 -->
+    <div class="demo-txt">测测</div><!-- 不透明文字 -->
+	<a href="http://www.cnblogs.com/PeunZhang/p/4089894.html"></a>
+</div>
+ 
+</html>
