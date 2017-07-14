@@ -1,0 +1,8 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.hacg.wiki	TRUE	/	FALSE	1999999999	__cfduid	da81a9d1267c5f2cbb56dcb384338dc631524912730
+www.hacg.wiki	TRUE	/	FALSE	1999999999	PHPSESSID	gqalo998f9t4jq2llsm9ea2e05
+.liuli.pw	TRUE	/	FALSE	1999999999	__cfduid	dac40c042a5b5b69120066df3dc6991c41524912739
+.llss.pw	TRUE	/	FALSE	1999999999	__cfduid	dbb15c25d312a6de89227d413600e136f1524912798
+.hacg.me	TRUE	/	FALSE	1999999999	__cfduid	d746d38d7e388debedbbffdf7e448574b1524912822
+

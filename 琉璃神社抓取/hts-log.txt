@@ -1,0 +1,17 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 28 Apr 2018 18:51:58 at https://www.hacg.wiki/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "zh, en, *" https://www.hacg.wiki/ -O1 "D:\WebCatche\https___www.hacg.wiki_" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+19:01:40	Error: 	"No data (connection closed)" (-4) after 2 retries at link www.hacg.wiki/robots.txt (from https://www.hacg.wiki/wp/)
+19:01:40	Warning: 	Retry after error -4 (No data (connection closed)) at link www.hacg.wiki/gg2/1/ (from https://www.hacg.wiki/wp/)
+19:01:40	Error: 	"Not Found" (404) at link https://www.liuli.pw/wp/wp-content/themes/twentyeleven2/ifocus_btn_bg.gif (from https://www.liuli.pw/wp/wp-content/themes/twentyeleven2/style.css)
+19:01:41	Error: 	"Not Found" (404) at link www.liuli.pw/wp/wp-content/uploads/2015/12/æ¸©æ³äº2.jpg (from https://www.hacg.wiki/wp/about.html)
+19:01:41	Warning: 	Retry after error -4 (No data (connection closed)) at link www.hacg.wiki/gg2/1/ (from https://www.hacg.wiki/wp/)
+19:01:41	Error: 	"No data (connection closed)" (-4) after 2 retries at link www.hacg.wiki/gg2/1/ (from https://www.hacg.wiki/wp/)
+
+HTTrack Website Copier/3.49-2 mirror complete in 9 minutes 43 seconds : 167 links scanned, 159 files written (16406974 bytes overall) [15468660 bytes received at 26532 bytes/sec], 1531026 bytes transferred using HTTP compression in 64 files, ratio 26%, 1.8 requests per connection
+(4 errors, 2 warnings, 0 messages)
